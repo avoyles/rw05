@@ -20,9 +20,9 @@
 #------------------------------------------------------------------------
 #    CHANGE  the next 3 lines to suit your installation preferences
 
-    INSTALL_DIR = ${HOME}/rw_current
-        INSTALL = /usr/bin/install -m 0644 -o radfordd -g users
-    INSTALL_BIN = /usr/bin/install -m 0755 -o radfordd -g users
+    INSTALL_DIR = ~/src/rw05
+        INSTALL = ~/src/rw05 -m 0644 -o andrew -g users
+    INSTALL_BIN = ~/src/rw05 -m 0755 -o andrew -g users
 
 #------------------------------------------------------------------------
 
@@ -58,7 +58,7 @@
 ##############  Methods  ##################
 
 include Makefile.common
-include Makefile.install_ucb
+include Makefile.install_cp
 
 static: xmgf3_static xmgls_static xmesc_static xmlev_static xm4dg_static
 
